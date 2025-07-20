@@ -1,0 +1,28 @@
+{
+  "name": "lets-react",
+  "version": "1.0.0",
+  "description": "lets start react journey",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/143ravan/lets-react.git"
+  },
+  "author": "raman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/143ravan/lets-react/issues"
+  },
+  "homepage": "https://github.com/143ravan/lets-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
