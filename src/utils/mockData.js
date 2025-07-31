@@ -1,7 +1,4 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-
-const resList = [
+export const RES_LIST = [
   {
     info: {
       id: '234875',
@@ -17,50 +14,7 @@ const resList = [
       totalRatingsString: '1.3K+',
       sla: {
         deliveryTime: 28,
-        lastMileTravel: 11.5,
-        serviceability: 'SERVICEABLE',
-        slaString: '25-30 mins',
-        lastMileTravelString: '11.5 km',
-        iconType: 'ICON_TYPE_EMPTY',
       },
-      availability: {
-        nextCloseTime: '2025-07-26 00:00:00',
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      aggregatedDiscountInfoV2: {},
-      type: 'F',
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      differentiatedUi: {
-        displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-        differentiatedUiMediaDetails: {
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-      restaurantOfferPresentationInfo: {},
-      externalRatings: {
-        aggregatedRating: {
-          rating: '--',
-        },
-      },
-      ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/adil-hotel-rautha-wada-chhindwara-locality-rest234875',
-      type: 'WEBLINK',
     },
   },
   {
@@ -119,13 +73,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/dev-international-khajri-road-mohan-nagar-rest151656',
-      type: 'WEBLINK',
     },
   },
   {
@@ -201,13 +148,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/gupta-bhojnalay-fulwara-chowk-chhindwara-locality-rest151515',
-      type: 'WEBLINK',
     },
   },
   {
@@ -292,13 +232,6 @@ const resList = [
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
     },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/satkar-restaurant-sinchai-colony-satkar-chowk-rest150591',
-      type: 'WEBLINK',
-    },
   },
   {
     info: {
@@ -369,13 +302,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/bakery-world-parasia-road-rest151518',
-      type: 'WEBLINK',
     },
   },
   {
@@ -458,13 +384,6 @@ const resList = [
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
     },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/hotel-sai-nath-and-sai-restaurant-railway-station-chhindwara-locality-rest151649',
-      type: 'WEBLINK',
-    },
   },
   {
     info: {
@@ -524,13 +443,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/the-fusion-lounge-triloki-nagar-railway-station-rest658210',
-      type: 'WEBLINK',
     },
   },
   {
@@ -606,13 +518,6 @@ const resList = [
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
     },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/mr-gurung-momo-and-chinese-corner-teachers-colony-mohan-nagar-rest151648',
-      type: 'WEBLINK',
-    },
   },
   {
     info: {
@@ -670,13 +575,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/kathi-junction-bunglow-madhuvan-colony-prasia-road-rest625927',
-      type: 'WEBLINK',
     },
   },
   {
@@ -750,13 +648,6 @@ const resList = [
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
     },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/the-belgian-waffle-co-sinchai-colony-mohan-nagar-rest385824',
-      type: 'WEBLINK',
-    },
   },
   {
     info: {
@@ -821,13 +712,6 @@ const resList = [
         },
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-    },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/sab-ghar-tak-foods-sanchar-colony-parsia-road-rest184424',
-      type: 'WEBLINK',
     },
   },
   {
@@ -903,69 +787,7 @@ const resList = [
       },
       ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
     },
-    analytics: {
-      context: 'seo-data-3853a671-a638-48d4-a9f1-d67ff19da361',
-    },
-    cta: {
-      link: 'https://www.swiggy.com/city/chhindwara/blue-chilli-restaurant-ambedkar-nagar-prasia-road-rest522144',
-      type: 'WEBLINK',
-    },
   },
 ]
 
-const Header = () => (
-  <div className="header">
-    <div className="logo-container">
-      <img
-        className="logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"
-        alt="logo"
-      />
-    </div>
-    <div className="nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact us</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-  </div>
-)
-const RestaurantCard = ({ resData }) => {
-  const { name, cuisines, avgRating, costForTwo, sla } = resData.info
-  return (
-    <div className="restaurant-card">
-      <img
-        className="restaurant-logo"
-        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resData.info.cloudinaryImageId}`}
-        alt="restaurant-logo"
-      />
-      <div className="resto-name">{name}</div>
-      <div className="resto-details">{cuisines.join(', ')}</div>
-      <div className="resto-details">{avgRating}</div>
-      <div className="resto-details">{sla.deliveryTime} mins</div>
-    </div>
-  )
-}
-const Body = () => (
-  <div className="body">
-    <div className="search"></div>
-    <div className="restaurant-container">
-      {resList.map((restaurant) => (
-        <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-      ))}
-    </div>
-  </div>
-)
-
-const AppLayout = () => (
-  <div id="app" className="app">
-    <Header />
-    <Body />
-  </div>
-)
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-
-root.render(<AppLayout />)
+export default { RES_LIST }
