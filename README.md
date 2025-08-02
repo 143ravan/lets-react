@@ -1,8 +1,7 @@
 # lets-react
 
-
-
 # Parcel
+
 - Dev build
 - Local server
 - HRM -> Hot Module Replacement
@@ -15,9 +14,16 @@
 
 - Consistent Hashing
 - Code spliting
-- Differential bundling  - support older browser
+- Differential bundling - support older browser
 - Diagnostics
 - Error handling
 - HTTPs
 - Tree Shaking - remove unused code
 - Different bundles for Dev and Prod environment
+
+Here are the 3 example endpoints you can directly use with fetch() or axios in
+your React app.
+
+1. https://pastebin.com/raw/0QcdEDBL
+2. https://swiggy-api-4c740.web.app/swiggy-api.json
+3. https://raw.githubusercontent.com/namastedev/namastereact/refs/heads/main/swiggy-api
