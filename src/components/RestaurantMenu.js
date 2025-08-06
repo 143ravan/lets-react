@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
         <p>
           {cuisines?.join(', ')} - {costForTwoMessage}
         </p>
-        <h3>Average Rating: {avgRating}</h3>
+        <h4>Average Rating: {avgRating}</h4>
         {/* This is a placeholder for menu items, you can replace it with actual data */}
         <ul>
           {itemCards?.map((item) => (

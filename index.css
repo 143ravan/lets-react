@@ -89,3 +89,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.user-card {
+  width: 200px;
+  height: 250px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.gap-8 {
+  gap: 8px;
+}
