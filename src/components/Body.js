@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import RestaurantCard from './RestaurantCard'
 import Shimmer from './Shimmer'
+import useOnlineStatus from '../utils/useOnlineStatus'
 
 const Body = () => {
   const [restaurantList, setRestaurantList] = useState([])
@@ -25,6 +26,11 @@ const Body = () => {
       data?.data?.cards[1].card?.card?.gridElements?.infoWithStyle
         ?.restaurants || []
     )
+  }
+
+  const onlineStatus = useOnlineStatus()
+  if (onlineStatus === false) {
+    return <h1>offline: take some rest</h1>
   }
   return filteredRestaurantList.length ? (
     <div className="body">
