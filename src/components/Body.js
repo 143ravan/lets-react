@@ -34,17 +34,18 @@ const Body = () => {
   }
   return filteredRestaurantList.length ? (
     <div className="body">
-      <div className="filter">
-        <div className="search-container">
+      <div className="flex gap-2">
+        <div className="flex gap-2 p-4">
           <input
+            id="searchText"
             type="text"
             placeholder="Search for restaurants"
-            className="search-input"
+            className="border-solid border-black border-1 rounded-lg"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="search-button"
+            className="px-4 py-2 bg-green-100 rounded-lg"
             onClick={() => {
               const listOfRest = restaurantList.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -55,19 +56,21 @@ const Body = () => {
             Search
           </button>
         </div>
-        <button
-          className="filter-button"
-          onClick={() => {
-            const listOfRest = restaurantList.filter(
-              (res) => res.info.avgRating > 4.2
-            )
-            setFilteredRestaurantList(listOfRest)
-          }}
-        >
-          Top rated restaurants{' '}
-        </button>
+        <div className="p-4">
+          <button
+            className="px-4 py-2 bg-gray-100 rounded-lg"
+            onClick={() => {
+              const listOfRest = restaurantList.filter(
+                (res) => res.info.avgRating > 4.2
+              )
+              setFilteredRestaurantList(listOfRest)
+            }}
+          >
+            Top rated restaurants{' '}
+          </button>
+        </div>
       </div>
-      <div className="restaurant-container">
+      <div className="flex flex-wrap">
         {filteredRestaurantList.map((restaurant) => (
           <Link
             to={`/restaurant/${restaurant.info.id}`}

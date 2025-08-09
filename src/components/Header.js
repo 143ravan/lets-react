@@ -8,23 +8,23 @@ export const Header = () => {
   const [btnName, setBtnName] = useState('Login')
   const onlineStatus = useOnlineStatus()
   return (
-    <div className="header">
-      <div className="logo-container">
+    <div className="flex justify-between bg-pink-100 shadow-lg">
+      <div className="w-16 p-2">
         <img className="logo" src={LOGO_URL} alt="logo" />
       </div>
       <div className="nav-items">
-        <ul>
-          <li>Status: {onlineStatus ? '✅' : '❌'} </li>
-          <li>
+        <ul className="flex p-4">
+          <li className="px-1">Status: {onlineStatus ? '✅' : '❌'} </li>
+          <li className="px-2">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-1">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="px-1">
             <Link to="/contact">Contact us</Link>
           </li>
-          <li>
+          <li className="px-1">
             <Link to="/grocery">Grocery</Link>
           </li>
           <button
