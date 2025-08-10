@@ -8,11 +8,8 @@ const RestaurantMenu = () => {
   const resInfo = useRestaurantMenu(id)
   const [showIndex, setShowIndex] = useState(0)
 
-  const { name, cuisines, costForTwoMessage, avgRating } =
+  const { name, cuisines, costForTwoMessage } =
     resInfo?.data?.cards[2]?.card?.card?.info || {}
-  const { itemCards } =
-    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
-      ?.card || []
 
   const categories =
     resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
