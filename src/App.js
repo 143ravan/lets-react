@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Error from './components/Error'
 import RestaurantMenu from './components/RestaurantMenu'
 
+import UserContext from './utils/UserContext'
 // chunking
 // code splitting
 // dynamic bundling
@@ -16,13 +17,23 @@ import RestaurantMenu from './components/RestaurantMenu'
 // on demand loading
 const Grocery = lazy(() => import('./components/Grocery'))
 
-const AppLayout = () => (
-  <div id="app" className="app">
-    <Header />
-    <Outlet />
-  </div>
-)
+const AppLayout = () => {
+  const [userName, setUserName] = useState()
+  useEffect(() => {
+    setUserName('Ravan')
+  }, [])
+  return (
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div id="app" className="app">
+        {/* <UserContext.Provider value={{ loggedInUser: 'TESTING' }}> */}
+        <Header />
+        {/* </UserContext.Provider> */}
 
+        <Outlet />
+      </div>
+    </UserContext.Provider>
+  )
+}
 const appRouter = createBrowserRouter([
   {
     path: '/',

@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import RestaurantCard, { withPromotedLabel } from './RestaurantCard'
 import Shimmer from './Shimmer'
 import useOnlineStatus from '../utils/useOnlineStatus'
+import UserContext from '../utils/UserContext'
 
 const Body = () => {
   const [restaurantList, setRestaurantList] = useState([])
@@ -10,6 +11,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState('')
 
   const PromotedRestaurantCard = withPromotedLabel(RestaurantCard)
+  const { loggedInUser, setUserName } = useContext(UserContext)
 
   useEffect(() => {
     fetchData()
@@ -70,6 +72,17 @@ const Body = () => {
           >
             Top rated restaurants{' '}
           </button>
+        </div>
+        <div className="p-4 flex gap-2">
+          <label className="p-2">User Name</label>
+          <input
+            id="userName"
+            type="text"
+            placeholder=" update user name"
+            className="border-solid border-black border-1 rounded-sm"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="flex flex-wrap">
