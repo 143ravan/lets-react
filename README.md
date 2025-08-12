@@ -21,8 +21,16 @@
 - Tree Shaking - remove unused code
 - Different bundles for Dev and Prod environment
 
-Here are the 3 example endpoints you can directly use with fetch() or axios in
-your React app.
+Here are the 3 example endpoints you can directly use with fetch() or axios in your React app.
+
+REDUX TOOL KIT
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect store to app
+- Slice (cartSlice)
+- dispatch action
+- Selector.
 
 1. https://pastebin.com/raw/0QcdEDBL
 2. https://swiggy-api-4c740.web.app/swiggy-api.json
