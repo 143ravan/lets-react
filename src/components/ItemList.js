@@ -13,7 +13,11 @@ const ItemList = (items) => {
   return (
     <div className="py-4  text-left">
       {items?.items?.map((item) => (
-        <div className="p-4 border-b-1 border-gray-200" key={item.card.info.id}>
+        <div
+          data-testid="foodItems"
+          className="p-4 border-b-1 border-gray-200"
+          key={item.card.info.id}
+        >
           <div className="flex justify-between">
             <div className="w-9/12">
               <div>
